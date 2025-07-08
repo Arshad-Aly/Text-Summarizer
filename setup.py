@@ -7,12 +7,12 @@ __version__= "0.0.0"
 
 REPO_NAME = 'Text-Summarizer'
 AUTHOR_USER_NAME = 'Arshad-Aly'
-SRC_REPO = 'Text-Summarizer'
+SRC_REPO = 'TextSummarizer'
 AUTHOR_EMAIL = 'syedarshadali188@gmail.com'
 
 
 setuptools.setup(
-    name=REPO_NAME,
+    name=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
@@ -23,6 +23,6 @@ setuptools.setup(
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{SRC_REPO}/issues",
     },
-    packages=setuptools.find_packages(where="src"),
     package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
 )
